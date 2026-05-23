@@ -878,6 +878,30 @@
   .notebook-screen-fallback span {
     color: #ffffff !important;
 }
+.installment-text {
+  color: #ffffff !important;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  margin: 4px 0 18px;
+  opacity: 0.95;
+}
+.payment-cards-img {
+  display: block;
+  width: 100%;
+  max-width: 230px;
+  height: auto;
+  margin: 14px auto 0;
+  object-fit: contain;
+  opacity: 0.95;
+}
+
+@media (max-width: 768px) {
+  .payment-cards-img {
+    max-width: 210px;
+    margin-top: 12px;
+  }
+}
 </style>
 </head>
 <body>
@@ -1170,7 +1194,7 @@
     <div class="pricing-card reveal reveal-d2">
       <p class="price-old">De R$97,00 por</p>
       <p class="price-new">R$45,00</p>
-      <p class="price-installment">ou em até 4x no cartão</p>
+      <p class="installment-text">ou em até 10x R$ 5,33</p>
       <ul class="pricing-bullets">
         <li class="pricing-bullet-item"><svg class="check-icon" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#46C15A" fill-opacity=".18"/><circle cx="10" cy="10" r="9" stroke="#46C15A" stroke-width="1.5"/><path d="M6 10.5l2.8 2.8L14 7.5" stroke="#46C15A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Acesso imediato</li>
         <li class="pricing-bullet-item"><svg class="check-icon" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#46C15A" fill-opacity=".18"/><circle cx="10" cy="10" r="9" stroke="#46C15A" stroke-width="1.5"/><path d="M6 10.5l2.8 2.8L14 7.5" stroke="#46C15A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>100% online</li>
@@ -1185,6 +1209,11 @@
         <span class="payment-badge">Boleto</span>
         <span class="payment-badge">🛡 Garantia 7 dias</span>
       </div>
+      <img 
+  src="./public/images/payment-cards.png" 
+  alt="Bandeiras de cartões aceitos" 
+  class="payment-cards-img"
+/>
     </div>
   </div>
 </section>
@@ -1246,7 +1275,7 @@
         <div class="author-quote">
           "Decoraram protocolos. Nunca aprenderam o porquê."
         </div>
-        <p class="author-body">Foi para mudar isso que criei o Método RAC — e é ele que sustenta tudo que você vai aprender em "Como Escolher o Vasoativo Certo no Plantão".</p>
+        <p class="author-body">Foi para mudar isso que criei o Método RAC, e é ele que sustenta tudo que você vai aprender em "Como Escolher o Vasoativo Certo no Plantão".</p>
         <br>
         <a href="https://pay.hub.la/uhQNUwjwUBDDXRh15Uun" class="cta-btn">QUERO ESSE RACIOCÍNIO AGORA</a>
       </div>
@@ -1262,7 +1291,7 @@
       <p class="final-body">O próximo paciente em choque não vai esperar você lembrar o que decorou.</p>
       <p style="font-size:14px;color:var(--text-muted);margin-bottom:4px;">De R$97,00 por</p>
       <p style="font-size:48px;font-weight:800;color:var(--dark-navy);letter-spacing:-0.03em;line-height:1;margin-bottom:6px;">R$45,00</p>
-      <p style="font-size:14px;color:var(--text-muted);margin-bottom:22px;">ou em até 4x no cartão</p>
+      <p class="installment-text">ou em até 10x R$ 5,33</p>
       <ul style="list-style:none;text-align:left;max-width:340px;margin:0 auto 24px;">
         <li class="pricing-bullet-item" style="color:var(--text-muted);"><svg class="check-icon" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#46C15A" fill-opacity=".18"/><circle cx="10" cy="10" r="9" stroke="#46C15A" stroke-width="1.5"/><path d="M6 10.5l2.8 2.8L14 7.5" stroke="#46C15A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Acesso imediato</li>
         <li class="pricing-bullet-item" style="color:var(--text-muted);"><svg class="check-icon" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#46C15A" fill-opacity=".18"/><circle cx="10" cy="10" r="9" stroke="#46C15A" stroke-width="1.5"/><path d="M6 10.5l2.8 2.8L14 7.5" stroke="#46C15A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>100% online</li>
@@ -1333,13 +1362,11 @@
   <div class="container">
     <div class="footer-content">
       <div>
-        <p class="footer-brand">Como Escolher o Vasoativo Certo no Plantão</p>
       </div>
       <div>
         <p class="footer-disclaimer">Material educacional. Não substitui avaliação clínica, protocolos institucionais ou julgamento médico individual.</p>
       </div>
       <div class="footer-links">
-        <a href="#" class="footer-link">Suporte</a>
       </div>
     </div>
     <p class="footer-copy">© 2026 — Como Escolher o Vasoativo Certo no Plantão. Todos os direitos reservados.</p>
